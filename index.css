@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Times new roman";
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("herobg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #722100;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  background-color: #ffd9ca;
+  border-radius: 10px; /* Rounds all corners by 10 pixels */
+  border: 5px #ffd9ca;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+.overview {
+  background-image: url("overviewbg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overview-text {
+  display: flex;
+  padding: 3rem 2rem;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex: 1;
+  position: relative;
+}
+
+.overview-text h2 {
+  font-size: 3rem;
+  margin-bottom: 0.05rem;
+  color: #722100;
+  background-color: #e99878;
+}
+
+.overview-text p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #722100;
+  line-height: 1.6;
+}
