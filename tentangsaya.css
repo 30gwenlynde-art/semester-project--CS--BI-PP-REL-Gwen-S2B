@@ -25,19 +25,33 @@ nav ul li a {
 }
 
 .container {
-  background-image: "tentangsayabg.jpg";
   margin: 50px auto;
   padding: 30px;
   width: 90%;
   max-width: 1000px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  align-content: center;
+
+  /*ini supaya foto Gwen ke tengah... #by ms grace*/
+  display: flex;
+  justify-content: center; /* supaya isi (div.gwen) di tengah horizontal */
+  align-items: center; /* opsional, kalau mau rata tengah vertikal juga */
+  flex-direction: column; /* supaya foto dan teks tetap menumpuk ke bawah */
 }
 
 .gwen {
-  width: 20%;
-  height: 20px;
+  width: 90%;
+  height: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
+
+.gwen img {
+  width: 150px; /* ubah ukuran sesuai kebutuhan */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* agar benar-benar center */
+}
+
